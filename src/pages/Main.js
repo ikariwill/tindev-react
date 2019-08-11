@@ -59,11 +59,11 @@ export default function Main({ match }) {
                 <p>{user.bio}</p>
               </footer>
               <div className="buttons">
-                <button onClick={() => handleLike(user._id)} type="button">
-                  <img src={like} alt="Like" />
-                </button>
                 <button onClick={() => handleDislike(user._id)} type="button">
                   <img src={dislike} alt="Dislike" />
+                </button>
+                <button onClick={() => handleLike(user._id)} type="button">
+                  <img src={like} alt="Like" />
                 </button>
               </div>
             </li>
